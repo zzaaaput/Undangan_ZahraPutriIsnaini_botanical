@@ -1,5 +1,5 @@
-/*cover
-AOS.init();*/
+/*cover*/
+AOS.init();
 function openInvitation(){
     const cover = document.querySelector("cover");
     const appearance = document.querySelector("appearance");
