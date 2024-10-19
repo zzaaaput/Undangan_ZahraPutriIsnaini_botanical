@@ -1,61 +1,56 @@
 *{
     scroll-behavior: smooth;
 }body {
-    font-family: Arial, sans-serif, Tahoma, Trebuchet MS, Times New Roman, 
-    Georgia , Garamond, Courier New, monospace, Brush Script MT, cursive, Trebuchet MS;
     margin: 0;
     padding: 0;
     height: 100vh;
 }::-webkit-scrollbar{
     display: none;
 }
+@font-face {
+    font-family: "judul";
+    src: url("../font/Hard\ Western.ttf");
+  }
+  @font-face {
+    font-family: "subjudul";
+    src: url("../font/Seville\ Old\ Gothic.ttf");
+  }
+  @font-face {
+    font-family: "subjudul2";
+    src: url("../font/Marons-Regular.ttf");
+  }
+  
 
 /*tampilan halaman*/
 #cover {
     display: block;
     overflow: hidden;
+    background-image: linear-gradient(to left, rgba(184, 184, 184, 0.2), rgba(184, 184, 184, 0.2)),url(../img/cover2.png); 
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 .crd-Cover{
     margin: 0;
     padding: 0;
     height: 100vh;
 }
-.buttom-right{
-    position: absolute;
-    width: 30%;
-    top: -2px;
-    right: -50px;
-    transform: scaleX(-1);
-}
-.frame1{
-    position: absolute;
-    width: 170px;
-    top: -5px;
-    left: -7px;
-}
-.hs1{
-    position: absolute;
-    width: 250px;
-    top: -60px;
-    right: 280px;
-}
 .header{ 
     p {
     top: 120px;
-    left: 180px;
+    left: 280px;
     position: absolute;
-    font-family: Brush Script MT;
+    font-family: "judul";
     margin: 0;
     font-size: 8.8em;
     text-shadow: #ffffff;}
     h3 {
-        left: 420px;
+        left: 580px;
         position: absolute;
         padding: 90px 0 0 0;
         font-size: 1.5em;}
     h2{
     top: 280px;
-    left: 450px;
+    left: 600px;
     position: absolute;
     margin: 10px 0 0;
     font-size: 20px;}
@@ -63,24 +58,24 @@
 .tamu{ 
     p{
     position: absolute;
-    left: 500px;
-    top: 260px;
+    left: 575px;
+    top: 330px;
     margin: 70px 0 0 0 ;
     font-size: 17px;}
     h3{
         position: absolute;
-        left: 410px;
-        top: 340px;
+        left: 640px;
+        top: 410px;
         font-family: Georgia;
         font-size: 20px;}
 }
 .btn {
     position: absolute;
-    top: 400px;
-    left: 410px;
+    top: 460px;
+    left: 570px;
     display: block;
-    width: 8em;
-    font-size: 1.5em;
+    width: 200px;
+    font-size: 20px;
     border-radius: 30px;
 }
 .btn:hover {
@@ -101,7 +96,7 @@
 }
 .opening {
     h1{
-    font-family:  Brush Script MT;
+    font-family:"judul";
     font-size: 5em;}
     h2{
         font-size: 1.7em;}
@@ -174,20 +169,7 @@
     top: 600px;
     z-index: 1;
 }
-.hs3{
-    position: absolute;
-    width: 300px;
-    right: -150px;
-    top: 1490px;
-    transform: scaleX(-1);
-}
-.hs4{
-    position: absolute;
-    width: 220px;
-    right: -25px;
-    top: 620px;
-    z-index: 1;
-}
+
 /*qoute*/
 .quote {
     display: block;
@@ -208,20 +190,6 @@
     left: 150px;
     z-index: 5;
 }
-}
-.vl {
-    border-left: 100px solid rgb(34, 85, 58);
-    height: 600px;
-    position: absolute;
-    right: 120px;
-    top: 1px;
-}
-.hs5{
-    position: absolute;
-    top: -50px;
-    width: 450px;
-    right: -20px;
-    z-index: 2;
 }
 .hs6{
     position: absolute;
@@ -244,7 +212,6 @@
         margin: 0 10px 10px 0;
         width: 18em;
         height: auto;
-        border: 8px solid #627e53;
         border-radius: 10px;
     }
 }
@@ -273,13 +240,10 @@
     }
   }
 
-#calender{
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(../img/frm-5.jpg);
-    background-size: 1400px;
-    background-repeat: no-repeat;
-}
 /*jadwal*/
 .timetable {
+    position: relative;
+    top: -350px;
     text-align: center;
     padding: 30px 0 0 0;
     h1{
@@ -288,14 +252,14 @@
     margin-top: 400px;
     }
     p {
-    font-size: 1.7em;
+    font-size: 2.5em;
     margin: 20px auto;
-    max-width: 600px;
     z-index: 5;}
 }
 .crd-timetable {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 .jadwal {
@@ -330,6 +294,8 @@
 
 /*jam*/
 .crd-countdown {
+    position: relative;
+    top: -450px;
     background-size: 20% 500px;
     display: block;
     padding: 0;
@@ -376,6 +342,8 @@
 
 /*maps*/
 .location {
+    position: relative;
+    top: -500px;
     p{
     font-family: cursive;
     font-size: 4em;
@@ -387,8 +355,11 @@
     height: 500px;}
 }    
 
+
 /*moment berharga*/
 .slider {
+    position: relative;
+    top: -470px;
     overflow: hidden;
     width: 100%;
     height: 50em;
@@ -438,12 +409,10 @@
 /*pesan*/
 #hadiah{
     display: flex;
-    padding-top: 20px;
-    margin-bottom: 30px;
 }
 /*rsvp*/
 .crd-rsvp{
-    display: inline-block;
+    display: block;
     font-family: cursive;
     color: #324427;
     width: 430px;
@@ -513,7 +482,6 @@ button:hover {
 
 /*hadiah*/
 .hdh {
-    display: inline-block;
     margin-left: 30px;
     height: 530px;
     width: 250px;
@@ -533,9 +501,7 @@ button:hover {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 10px ;
     height: 147px;
-    padding: 10px;
     text-align: left;
     h4 {
             font-family: cursive;
@@ -644,6 +610,8 @@ button:hover {
 }
 /*roundown*/
 #crd-table-rwn{
+    position: relative;
+    top: -450px;
     padding-top: 2px;
     padding-bottom: 30px;
     max-width: 450px;
@@ -665,6 +633,8 @@ button:hover {
 }
 /*tamu khusus*/
 #crd-tm-khusus {
+    position: relative;
+    top: -450px;
     padding: 30px 0;
 }
 .table-tm {
@@ -738,12 +708,7 @@ th[colspan] {
         padding-bottom: 70px;
     }
 }
-.hs8{
-    position: absolute;
-    right: -2px;
-    width: 250px;
-    top: 8755px;
-}
+
 /*navigasi*/
 #nav{
     display: flex;
@@ -776,10 +741,6 @@ th[colspan] {
     position: absolute;
     top: 7400px;
 }
-.hs8{
-    position: absolute;
-    top: 7400px;
-}
 .hs9{
     position: absolute;
     top: 1600px;
@@ -805,42 +766,35 @@ th[colspan] {
 .hs13{
     display: none;
 }
-.hs14{
-    width: 80px;
-    margin-bottom: -50px;
-}
+
+
 @media (max-width: 600px) {
 /*cover*/
-.frame1{
-    position: absolute;
-    width: 190px;
-    top: 5px;
-    left: -100px;
-}
-.buttom-right{
-    position: absolute;
-    width: 65%;
-    top: 300px;
-    right: -140px;
-    transform: scaleX(-1);
+#cover {
+    display: block;
+    overflow: hidden;
+    background-image: url(../img/cover1.png); 
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 .header{ 
     p {
-    top: 120px;
-    left: 100px;
+    top: 175px;
+    left: 70px;
     position: absolute;
-    font-family: Brush Script MT;
+    font-family: "subjudul";
     margin: 0;
-    font-size: 5.3em;
+    font-size: 68px;
     text-shadow: #ffffff;}
     h3 {
+        top: 50px;
         left: 160px;
         position: absolute;
         padding: 90px 0 0 0;
         font-size: 1em;}
     h2{
-    top: 330px;
-    left: 170px;
+    top: 250px;
+    left: 140px;
     position: absolute;
     margin: 10px 0 0;
     font-size: 1.2em;}
@@ -848,31 +802,25 @@ th[colspan] {
 .tamu{ 
     p{
     position: absolute;
-    left: 210px;
-    top: 320px;
+    left: 110px;
+    top: 420px;
     margin: 70px 0 0 0 ;
-    font-size: 1em;}
+    font-size: 20px;}
     h3{
         position: absolute;
-        left: 140px;
-        top: 405px;
+        left: 170px;
+        top: 510px;
         font-family: Georgia;
-        font-size: 1em;}
+        font-size: 20px;}
 }
 .btn {
     position: absolute;
-    top: 450px;
-    left: 160px;
+    top: 570px;
+    left: 130px;
     display: block;
-    width: 8em;
-    font-size: 1em;
-    border-radius: 30px;
-}
-.hs1{
-    position: absolute;
     width: 150px;
-    top: -10px;
-    right: 10px;
+    font-size: 1em;
+    border-radius: 20px;
 }
 /*love*/
 .profile {
@@ -881,9 +829,25 @@ th[colspan] {
 }
 .opening {
     h1{
-    font-family:  Brush Script MT;
-    font-size: 7.5em;
-    z-index: 5;}
+        position: relative;
+        left: 50px;
+        top: -50px;
+        font-family:"subjudul2";
+        font-size: 100px;
+        z-index: 5;}
+    h2{
+        position: relative;
+        top: -90px;
+        font-size: 25px;}
+    p{
+        position: relative;
+        top: -100px;
+        margin: 10px;
+        font-size: 17px;}
+}
+.couple{
+    position: relative;
+    top: -80px;
 }
 #appearance{
     background-size: cover;
@@ -894,40 +858,18 @@ th[colspan] {
     left: -30px;
     top: 600px;
     z-index: 1;}
-.hs3{
+    
+    /*qoute*/
+    .quote-box{
+    background-image: url("../img/qoutes.png"); 
+    background-size: cover;
+        p{
     position: absolute;
-    width: 300px;
-    right: -150px;
-    top: 2700px;
-    transform: scaleX(-1);}
-.hs4{
-    position: absolute;
-    width: 150px;
-    right: -15px;
-    top: 820px;}
-/*qoute*/
-.quote-box{
-    p{
-    position: absolute;
-    width: 270px;
+    width: 200px;
     font-size: 0.8em;
     top: 100px;
-    left: 50px;
+    left: 100px;
     z-index: 5;}
-}
-.vl {
-    border-left: 50px solid rgb(34, 85, 58);
-    height: 600px;
-    position: absolute;
-    right: 40px;
-    top: -1px;
-}
-.hs5{
-    position: absolute;
-    top: 70px;
-    width: 300px;
-    right: -50px;
-    z-index: 2;
 }
 .hs6{
     position: absolute;
@@ -936,13 +878,18 @@ th[colspan] {
     top: 20px;
 }
 /*moment*/
+.moment{
+    position: relative;
+    top: -100px;
+}
 .moment img{
-    width: 8em;
+    width: 165px;
     padding: 1px;
 }
 /*video*/
 .video{
-    display: flex;
+    position: relative;
+    top: -120px;
     video{
         margin-top: 20px;
         width: 250px;
@@ -955,29 +902,31 @@ th[colspan] {
     width: 230px;}
 /*calender*/
 #calender{
+    position: relative;
+    top: -120px;
     background-size: 500px;
     background-repeat: repeat;
 }
 .timetable{
     padding: 20px;
+    text-align: center;
     h1{
         margin-top: 100px;
         font-size: 4em;
-        margin-left: -30px}
     p{
-        font-size: 1.5em;
-        padding: 5px 50px;
-        margin-left: -40px;}
+        font-size: 1.5em;}
 }
 .crd-timetable{
-    display: block;
-    width: 900px;
-    margin: -5px;
+    flex-direction: column;
 }
 .jadwal{
-    margin-right: 30px;
-    width: 350px;
-    margin-left: 50px;
+    padding: 20px;
+    width: 310px;
+p{
+    padding-left: 80px;
+    font-size: 20px;
+
+}
 }
     /*jam*/
     .countdown-text{
@@ -999,8 +948,8 @@ th[colspan] {
         margin-top: 50px;
     }
     .countdown-box {
-        flex-grow: 2;
-        flex-basis: 100px;
+        display: inline-block;
+        width: 50px;
         height: auto;
         margin: 10px;
         box-shadow: 0 0 30px rgba(0, 0, 0, 3);
@@ -1020,16 +969,25 @@ th[colspan] {
         margin-bottom: 50px;
         margin-left: -20px;}
     }
+
+/*moment berharga*/
+.slider{
+    position: relative;
+    top: -120px;
+}
+
+/*tm khusus*/
+#crd-tm-khusus{
+    position: relative;
+    top: -190px;
+}
+/*jam*/
+
 /*bagian bawah*/
     .hs7{
         width: 120px;
         position: absolute;
         top: 8000px;
-    }
-    .hs8{
-        position: absolute;
-        top: 8050px;
-        width: 100px;
     }
     .hs9{
         position: absolute;
@@ -1064,10 +1022,6 @@ th[colspan] {
         left: 220px;
 
     }
-    .hs14{
-        width: 60px;
-        margin-bottom: -50px;
-    }
     th, td {
         font-size: 12px;
         padding: 8px;
@@ -1078,8 +1032,7 @@ th[colspan] {
     #crd-table-rwn{
         display: none;}
     #crd-tm-khusus{
-        width: 30em;
-    }
+        width: 25em;    }
     #hadiah{
         display: inline-block;
     }
@@ -1107,23 +1060,22 @@ th[colspan] {
         width: 280px;
     }
 }
-
+}/*tutup*/
 .bg-0{background-color: #fff;}
-.bg-1{background-color: #D8EFD3;}
-.bg-2{background-color: #B5CFB7;}
-.bg-3{background-color: #9eb98e;}
-.bg-4{background-color: #75A47F;}
-.bg-5{background-color: #53744b;}
-.bg-6{background-color: #485c3c;}
-.bg-7{background-color: #324427;}
-.bg-8{background-color: #6e624f;}
-.bg-9{background-color: #493f2f;}
-.bg-11{background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/bg-img-7.jpeg"); background-repeat: no-repeat; background-size: cover;}
-.bg-12{background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bg-ltr1.png"); background-repeat: no-repeat; background-size: cover;}
-.bg-13{background-color: #D8EFD3;}
-.bg-14{background-color: #4F6F52;}
-.bg-15{background-color: #99BC85;}
-.bg-16{background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../img/img-8.jpeg"); background-size: cover;}
+.bg-1{background-color: #F5F1E8;}
+.bg-2{background-color: #8FBC8F;}
+.bg-3{background-color: #eeeced;}
+.bg-4{background-color: #bfc694;}
+.bg-5{background-color:  #6f8d5e;}
+.bg-6{background-color:  #3c4b33;}
+.bg-7{background-color: #ffe6dd;}
+.bg-8{background-color: #efb9a5;}
+.bg-9{background-color: #e9c770;}
+.bg-10{background-color: #c7d6e3;}
+.bg-11{background-color:  #000000;}
+.bg-13{background-image: url("../img/cover1.png"); background-repeat: no-repeat; background-size: cover;}
+.bg-14{background-image: url("../img/qoutes.png"); background-size: cover; background-repeat: no-repeat;}
+.bg-15{background-image: url("../img/moment.png");}
 
 .cl-00{color: #000000;}
 .cl-0{color: #fff;}
