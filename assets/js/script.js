@@ -94,11 +94,15 @@ function openInvitation() {
 
         // Function to toggle music
         function iconImage() {
-            if (music.paused) {
-                music.play();
-            } else {
-                music.pause();
-            }
+                const music = document.querySelector('audioPlayer');
+                const iconImage = document.querySelector('iconImage');
+                if(music.paused){
+                    music.play();
+                    iconImage.src = "assets/audio/img/audioOff.png";
+                }else{
+                    music.pause();
+                    iconImage.src = "assets/audio/img/audioOn.png";
+                }
         }
 
 /*kehadiran*/

@@ -1,3 +1,99 @@
+<?php
+$background_image = "path/to/background.jpg";
+$logo = "assets/img/logo-transparan.png";
+$logo_navigasi = [  "assets/img/logo-love.png",
+                    "assets/img/logo-image.png",
+                    "assets/img/logo-calender.png",
+                    "assets/img/logo-location.png",
+                    "assets/img/logo-message.png" ];
+$couple = "Anna & Zizan";
+$nama_tamu = "Zahra";
+$pengantin = [ 
+                [
+                    ["namaPanggilanPria" => "Zizan"], 
+                    ["namaPanggilanWanta" => "Anna"]
+                ],
+                [
+                    ["namaPengantinPria" => "Muhammad Alaska Azizan Vincent"], 
+                    ["namaPengantinWanta" => "Anna Azalea Putri Abivadya"]
+                ],
+                [
+                    ["keluargaPria" => "Putra Keempat Dari:<br>Bapak M.Aiden Vincent dan Ibu Aisy Queenzha"], 
+                    ["keluargaWanita" => "Putri Kedua Dari:<br>Bapak M.Bagaskara Abivadya dan Ibu Azalia Steffani"]
+                ],
+                [
+                    ["daerahAsalPria" => "Lombok"], 
+                    ["daerahAsalWanita" => "Jakarta"]
+                ],
+                [
+                    ["instagramPria" => "@zizan.vincent"], 
+                    ["instagramWanita" => "@annaa.abivadya"]
+                ]
+    ];
+$waktu_pernikahan = [
+                        [   ["waktu" => "Jumat, 6 November 2026"], 
+                            ["jam" => "21:00 WIB - 23:00 WIB"], 
+                            ["lokasi" => "Lokasi di Jakarta"]
+                        ],
+                        [   ["waktu" => "Sabtu, 7 November 2026"], 
+                            ["jam" => "07:00 WIB - 22:00 WIB"], 
+                            ["lokasi" => "Lokasi di Jakarta"]
+                        ],
+                        ["tanggal" => "06 . 11 . 2026"],
+                        ["hari" => "Sabtu, 7 November 2026"]  
+                    ];
+$wedding_photos = ["assets/img/moment/16a.jpeg", 
+                    "assets/img/moment/18a.jpeg", 
+                    "assets/img/moment/19a.jpeg",
+                    "assets/img/moment/1a.jpeg",
+                    "assets/img/moment/25a.jpeg",
+                    "assets/img/moment/26a.jpeg",
+                    "assets/img/moment/24a.jpeg",
+                    "assets/img/moment/2a.jpeg",
+                    "assets/img/moment/31a.jpeg",
+                    "assets/img/moment/22a.jpeg",
+                    "assets/img/moment/12a.jpeg",
+                    "assets/img/moment/17-a.jpeg",
+                    "assets/img/moment/31a.jpeg",
+                    "assets/img/moment/6a.jpeg"];
+$wedding_video = [
+                    "assets/video/video.mp4", 
+                    "https://www.youtube.com/embed/FBx38gbMPco?si=L5oO9CExZEGxnzW6"];
+$wedding_moment = [ ["Februari 2026", "Bertemu"],
+                    ["Juli 2026", "Ta'aruf"],
+                    ["September 2026", "Lamaran"],
+                    ["November 2026", "Menikah"]    ];
+$schedule = [   ["07:10", "Pembukaan"],
+                ["07:30", "Kirab Pengantin"],
+                ["10:00", "Sambutan kedua mempelai"],
+                ["10:20", "Pembacaan doa"],
+                ["10:30", "Pemberian Ucapan Selamat"],
+                ["19:30", "Hiburan"],
+                ["20:30", "Penutupan"] ];
+$tamu_khusus = [    ["No", "Nama", "Jabatan", "Identitas"],
+                    ["Email", "Alamat"],
+                    ["1", "Sebastian Eart Sanders", "Owner Sanders Shop", "sebastian@gmail.com", "JL.Anggur"],
+                    ["2", "Cakra Darius Drax", "PT Darius Company", "cakra.drax@gmail.com", "JL.Mangga"],
+                    ["3", "Muhammad Raffasya Aidtya", "Keluarga", "raffa66@gmail.com", "JL.Mentimun"],
+                    ["4", "Naufal Dary Abiyyu", "Sepupu", "abiyyu.naufal@gmail.com", "JL.Sirsak"],
+                    ["5", "Healvito Revan Abraham", "Sepupu", "abraham@gmail.com", "JL.Jeruk"]  ];
+$location = ["https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.814898970637!2d106.81356287370099!3d-6.288044661544442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1f7922dadfb%3A0x98dfd50aed23cd0e!2sTaman%20Kajoe!5e0!3m2!1sid!2sid!4v1725775282282!5m2!1sid!2sid"];
+$RSVP = [   ["Nama :"],
+            ["kehadiran :", "Saya akan datang", "Maaf, saya tidak bisa hadir"],
+            ["Jumlah Tamu :"],
+            ["Souvenir :", "Foto both", "Bingkisan", "Alat Shalat", "Voucher"],
+            ["Acara :", "Akad", "Resepsi", "Keduanya"]];
+$transfer = [   ["BNI", "BCA"],
+                ["6544784968", "0064256711"],
+                ["Zahra Putri", "Zahra Putri"]];
+$message = [["Nama :", "Masukkan nama"],
+            ["Pesan :", "Sampaikan pesan kepada pengantin"]];
+$audio = [  ["iconOn" => "assets/audio/img/audioOn.png"],
+            ["iconOff" => "assets/audio/img/audioOff.png"],
+            ["audio" => "assets/audio/audio.mp3"]
+        ];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
